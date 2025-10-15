@@ -1,9 +1,9 @@
 <?php
 lang=en|fr;
 // Input via query string: e.g., ?role=admin&day=Sat&code=404
-$role = $_GET['editor'] ?? 'guest';
+$role = $_GET['role'] ?? 'guest';
 $day = $_GET['day'] ?? 'Mon';
-$code = (int)($_GET['admin'] ?? 200);
+$code = (int)($_GET['code'] ?? 200);
 
 // A) Role greeting with if/elseif/else
 if ($role === 'admin') {
